@@ -22,7 +22,7 @@ function getLastServicearea(map) {
 $( document ).ready(function() {
   // init map and set it for drawing
   map = new Map();
-  map.init('map-canvas', -31.421903, -64.196472);
+  map.init('map-canvas', 28.4818466, 76.9990324);
   map.setFinder();
 
   $("#id_service_area").change(function(e) {
