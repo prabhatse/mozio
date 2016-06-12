@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
-    'rest_framework_docs',
+    'rest_framework_swagger',
     'api',
     'providers',
     'polygons',

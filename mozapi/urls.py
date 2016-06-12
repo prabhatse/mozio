@@ -10,5 +10,5 @@ urlpatterns = [
     url(r'^api/', include('api.urls')),
     url(r'^polygon/', include('polygons.urls')),
     url(r'^provider/', include('providers.urls')),
-    url(r'^rest-api/', include('rest_framework_docs.urls')),
+    url(r'^api-docs/', include('rest_framework_swagger.urls')),
     ]
