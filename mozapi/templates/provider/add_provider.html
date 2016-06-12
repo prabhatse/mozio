@@ -1,0 +1,32 @@
+{% extends "base_wo_map.html" %}
+{% load staticfiles %}
+
+{% block script %}
+<script src="{% static "js/main_wo.js" %}"></script>
+{% endblock %}
+
+{% block head %}
+
+	<div class="errors">
+	</div>
+	<div class="success">
+	</div>
+	<!-- a class="btn btn-default btn-large next" href="{% url "find" %}">Next</a-->
+	<div style="clear:both"></div>
+
+{% endblock %}
+
+{% block content %}
+	<form methos="post" action=".">
+
+	    Add Provider
+		{{form.name}}
+		{{form.email}}
+		{{form.phone_no}}
+		{{form.language}}
+		{{form.currency}}
+		<button type="submit" class="btn btn-primary btn-large">Save!</button>
+		
+	</form>
+
+{% endblock%}
